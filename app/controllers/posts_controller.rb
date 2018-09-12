@@ -23,7 +23,7 @@ end
 
 	def update
 	  @post = Post.find(params[:id])
-	  @post.update(params[:title])
+	  @post.update(title: params[:title])
 	  redirect_to post_path(@post)
 	end
 end
